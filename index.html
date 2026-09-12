@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItsPoolBoy - Content Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Music Player -->
+    <div class="music-player">
+        <div class="player-content">
+            <div class="player-info">
+                <h4 id="song-title">Background Music</h4>
+                <p id="song-artist">Playing...</p>
+            </div>
+            <div class="player-controls">
+                <button id="play-btn" class="control-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <input type="range" id="volume-slider" min="0" max="100" value="50" class="volume-slider">
+                <span id="volume-value">50%</span>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌊 ItsPoolBoy</h1>
+            <nav class="nav">
+                <a href="#home" class="nav-link active" onclick="scrollToSection('home')">Home</a>
+                <a href="#notes" class="nav-link" onclick="scrollToSection('notes')">Notes</a>
+                <a href="#gallery" class="nav-link" onclick="scrollToSection('gallery')">Gallery</a>
+                <a href="#music" class="nav-link" onclick="scrollToSection('music')">Music</a>
+                <a href="#links" class="nav-link" onclick="scrollToSection('links')">Links</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Content Hub</h1>
+                <p>Share notes, images, music, links, and more in one place</p>
+                <button class="cta-btn" onclick="scrollToSection('notes')">Explore</button>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes" class="section">
+            <div class="container">
+                <h2 class="section-title">📝 Notes</h2>
+                <div class="content-grid">
+                    <div class="card note-card">
+                        <h3>My First Note</h3>
+                        <p>This is a sample note. You can add your thoughts, ideas, and important information here. Edit the HTML to add your own notes!</p>
+                        <span class="date">Today</span>
+                    </div>
+                    <div class="card note-card">
+                        <h3>Tips & Tricks</h3>
+                        <p>Keep track of useful tips, code snippets, or important reminders. Perfect for organizing your thoughts and ideas.</p>
+                        <span class="date">Yesterday</span>
+                    </div>
+                    <div class="card note-card">
+                        <h3>Add More Notes</h3>
+                        <p>Simply duplicate this card structure in the HTML file and add your own content. It's easy to customize!</p>
+                        <span class="date">Anytime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">🖼️ Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Image 1</p>
+                        </div>
+                        <p class="image-caption">Add your image here</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Image 2</p>
+                        </div>
+                        <p class="image-caption">Add your image here</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Image 3</p>
+                        </div>
+                        <p class="image-caption">Add your image here</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Image 4</p>
+                        </div>
+                        <p class="image-caption">Add your image here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music" class="section">
+            <div class="container">
+                <h2 class="section-title">🎵 Music Tracks</h2>
+                <div class="music-tracks">
+                    <div class="track-item">
+                        <div class="track-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="track-info">
+                            <h4>Sample Track 1</h4>
+                            <p>Artist Name</p>
+                        </div>
+                        <a href="#" class="play-link" title="Play">
+                            <i class="fas fa-play-circle"></i>
+                        </a>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="track-info">
+                            <h4>Sample Track 2</h4>
+                            <p>Artist Name</p>
+                        </div>
+                        <a href="#" class="play-link" title="Play">
+                            <i class="fas fa-play-circle"></i>
+                        </a>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="track-info">
+                            <h4>Sample Track 3</h4>
+                            <p>Artist Name</p>
+                        </div>
+                        <a href="#" class="play-link" title="Play">
+                            <i class="fas fa-play-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section id="links" class="section">
+            <div class="container">
+                <h2 class="section-title">🔗 Useful Links</h2>
+                <div class="links-grid">
+                    <a href="#" class="link-card">
+                        <i class="fas fa-link"></i>
+                        <h4>Link 1</h4>
+                        <p>Description of your link</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <i class="fas fa-link"></i>
+                        <h4>Link 2</h4>
+                        <p>Description of your link</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <i class="fas fa-link"></i>
+                        <h4>Link 3</h4>
+                        <p>Description of your link</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <i class="fas fa-link"></i>
+                        <h4>Link 4</h4>
+                        <p>Description of your link</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ItsPoolBoy. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
